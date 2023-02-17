@@ -5,7 +5,7 @@
 /* betty style doc for function main goes there */
 /**
  * main - entry point
- * return 0 sucess
+ * return: Always 0 (Success)
  */
 int main(void)
 {
