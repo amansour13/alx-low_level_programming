@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Check if a filename was provided as an argument
+if [ $# -eq 0 ]; then
+  echo "Usage: preprocess.sh <main.c>"
+  exit 1
+fi
+
+# Run the file through the preprocessor
+cpp -P "$1" > "${1%.*}.i"
+
+echo "Preprocessed output saved to ${1%.*}.i"

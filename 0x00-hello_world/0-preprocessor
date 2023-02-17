@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Check if the C file name is set
+if [ -z "$CFILE" ]; then
+  echo "Error: C file name not set"
+  exit 1
+fi
+
+# Run the file through the preprocessor and save the output to a file
+cpp -P "$CFILE" -o c
+
+echo "Preprocessed output saved to c"
