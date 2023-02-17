@@ -23,8 +23,11 @@ int main(void)
 				putchar(j % 10 + '0');
 				if (i < 99)
 				{
+					if (j != 99)
+					{
 					putchar(',');
 					putchar(' ');
+					}
 				}
 			}
 		}
