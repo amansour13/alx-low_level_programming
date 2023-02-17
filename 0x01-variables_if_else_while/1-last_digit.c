@@ -3,6 +3,10 @@
 /* more headers goes there */
 #include <stdio.h>
 /* betty style doc for function main goes there */
+/**
+ * main - entry point
+ * return 0 sucess
+ */
 int main(void)
 {
 	int n, l;
@@ -12,11 +16,11 @@ int main(void)
 	l = n % 10;
 	/* your code goes there */
 	printf("Last digit of %d is %d", n, l);
-	if (n > 5)
+	if (l > 5)
 		printf(" and is greater than 5\n");
-	else if (n == 0)
+	else if (l == 0)
 		printf(" and is 0\n");
-	else if (n < 6 && n != 0)
+	else if (l < 6 && l != 0)
 		printf(" and is less than 6 and not 0\n");
 	return (0);
 }
